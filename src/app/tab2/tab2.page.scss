@@ -1,0 +1,42 @@
+.pic {
+  width: 90%;
+  height: 90%;
+  padding-left: 10%;
+
+}
+
+.bg {
+  background-color: #c49871;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+}
+
+.body {
+  background-color: #f6ddb4;
+  padding-top: 3%;
+  padding-bottom: 5%;
+  padding-left: 3%;
+  padding-right: 3%;
+  margin-top: 35%;
+  margin-bottom: 35%;
+}
+
+h1 {
+  text-align: center;
+  color: black;
+}
+
+.loginpass {
+  width: 100%;
+  padding-left: 9px;
+  padding-right: 9px;
+}
+
+.block {
+  --border-radius: 20px;
+}
+
+ion-icon {
+  color: black;
+}

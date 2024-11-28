@@ -1,0 +1,53 @@
+#container {
+  text-align: center;
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+#container strong {
+  font-size: 20px;
+  line-height: 26px;
+}
+
+#container p {
+  font-size: 16px;
+  line-height: 22px;
+  color: #8c8c8c;
+  margin: 0;
+}
+
+#container a {
+  text-decoration: none;
+}
+
+.pic {
+  width: 90%;
+  height: 90%;
+  padding-left: 10%;
+
+}
+
+.body {
+  background-color: #C49871;
+}
+
+.body h3 {
+  padding-left: 2%;
+}
+
+.plus {
+  padding-left: 42%;
+}
+
+.menu {
+  padding-left: 4%;
+  padding-right: 4%;
+  padding-top: 4%;
+}
+
+.footer {
+  background-color: #E4A063;
+}

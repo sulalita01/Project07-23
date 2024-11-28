@@ -1,0 +1,53 @@
+<ion-toolbar color="creamb">
+  <ion-grid>
+    <ion-row>
+      <ion-col size="9" push="3"><br> ไมมูเนาะห์ เครปญี่ปุ่นไส้ทะลัก <br>
+                                  (Maimunah Japanese Crepe)</ion-col>
+      <ion-col size="3" pull="9"><a href="/tabs/tab1"><img class="pic" src="../../assets/pic/logo.png" alt="กลับไปหน้าแรก"></a></ion-col>
+    </ion-row>
+  </ion-grid>
+</ion-toolbar>
+
+<ion-content [fullscreen]="true">
+  <ion-card style="background-color: #C49871;" class="menu1" *ngIf="item">
+    <img class="picmenu" [src]="item.ImageURL" alt="">
+    <h3 class="namemenu"><b>{{ item.name }}</b></h3>
+
+    <h4 class="note"><b>ชื่อเมนู</b></h4>
+    <ion-input label="เมนู" label-placement="floating" fill="outline" placeholder="กรอกเมนูที่คุณต้องการ..."
+    type="text" [(ngModel)]="txtname"></ion-input>
+
+
+    <h4 class="pang"><b>เลือกแป้ง</b></h4>
+    <div class="pickpang" >
+      <ion-radio-group [(ngModel)]="txtflour">
+        <h5><ion-radio labelPlacement="end"  value="ต้นตำหรับ">แป้งต้นตำหรับ</ion-radio></h5>
+        <h5><ion-radio labelPlacement="end" value="ชาโคล">แป้งชาโคล</ion-radio></h5>
+      </ion-radio-group>
+    </div>
+
+    <h4 class="sauce"><b>เลือกซอส</b></h4>
+    <div class="picksauce">
+      <ion-radio-group [(ngModel)]="txtsauce">
+        <h5><ion-radio labelPlacement="end" value="ช็อกโกแลต">ซอสช็อกโกแลต</ion-radio></h5>
+        <h5><ion-radio labelPlacement="end" value="นมข้น">นมข้น</ion-radio></h5>
+        <h5><ion-radio labelPlacement="end" value="สตอเบอรี่">ซอสสตอเบอรี่</ion-radio></h5>
+        <h5><ion-radio labelPlacement="end" value="คาราเมล">ซอสคาราเมล</ion-radio></h5>
+        <h5><ion-radio labelPlacement="end" value="มะเขือเทศ">ซอสมะเขือเทศ</ion-radio></h5>
+        <h5><ion-radio labelPlacement="end" value="พริก">ซอสพริก</ion-radio></h5>
+        <h5><ion-radio labelPlacement="end" value="มายองเนส">ซอสมายองเนส</ion-radio></h5>
+      </ion-radio-group>
+    </div>
+
+    <h4 class="note"><b>หมายเหตุ</b></h4>
+    <ion-input label="หมายเหตุ" label-placement="floating" fill="outline" placeholder="กรอกข้อมูลที่คุณต้องการเพิ่ม..."
+    type="text" [(ngModel)]="txtnote"></ion-input>
+
+    <h4 class="note"><b>จำนวน</b></h4>
+    <ion-input label="จำนวน" label-placement="floating" fill="outline" placeholder="กรอกจำนวนที่คุณต้องการ..."
+    type="text" [(ngModel)]="txtquantity"></ion-input>
+
+    <ion-button class="confirm" shape="round" size="large" color="light" (click)="goToqueue()"  (click)="addproduct()">ยืนยันออเดอร์</ion-button>
+
+  </ion-card>
+</ion-content>

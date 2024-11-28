@@ -1,0 +1,7 @@
+{
+  "name": "Maimunah Japanese Crepe",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}
