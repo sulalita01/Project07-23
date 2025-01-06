@@ -10,7 +10,6 @@ import { HttpClient } from '@angular/common/http';
 })
 export class DetailsPage implements OnInit {
 
-
 productshow:any=[];
   constructor(private navCtrl: NavController,
     public dataapi: DataapiService,
@@ -28,4 +27,15 @@ productshow:any=[];
     this.productshow = this.dataapi.data_detail_pd;
   }
 
+  deldata(id: any){
+    this.dataapi.delproduct(id).subscribe({
+      next: (res:any) => {
+        console.log("ลบข้อมูลสำเร็จ", res);
+        this.productshow = res;
+      },
+      error: (err: any) => {
+        console.log("เกิดข้อผิดพลาดในการลบข้อมูล", err);
+      }
+    });
+  }
 }

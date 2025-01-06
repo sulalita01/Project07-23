@@ -26,7 +26,7 @@ export class DataapiService {
 
    //ฟังก์ชันลบผลข้อมูล
   delproduct(id: any){
-    return this.http.delete('http://127.0.0.1/Project07_API_Update/Project07_API/Delete.php');
+    return this.http.delete('http://127.0.0.1/Project07_API_Update/Project07_API/Delete.php?id='+id);
   }
 
 

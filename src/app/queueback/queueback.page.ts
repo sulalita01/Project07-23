@@ -11,8 +11,6 @@ import { DataapiService } from '../dataapi.service';
 export class QueuebackPage implements OnInit {
   productshow:any[]=[];
 
-
-
   constructor(private navCtrl: NavController,public dataapi:DataapiService) {
     this.showproduct();
    }
@@ -24,7 +22,8 @@ export class QueuebackPage implements OnInit {
 }
 
   ngOnInit() {
-    this.showproduct();
+    this.showproduct == this.dataapi.data_detail_pd;
+
   }
 
   showproduct(){
@@ -37,5 +36,19 @@ export class QueuebackPage implements OnInit {
         console.log("แสดงผลข้อมูลไม่ได้",error);
       }
     });
+  }
+
+//ลบข้อมูล
+  deldata(id: any){
+    //console.log('ค่าที่กรอก',data);
+    this.dataapi.delproduct(id).subscribe({
+      next: (res:any) => {
+        console.log("ลบข้อมูลสำเร็จ", res);
+      },
+      error: (err: any) => {
+        console.log("เกิดข้อผิดพลาดในการลบข้อมูล", err);
+      }
+    });
+    this.showproduct();
   }
 }

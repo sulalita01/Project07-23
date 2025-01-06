@@ -18,10 +18,22 @@
             <h6>ยืนยันออเดอร์เมื่อ {{show.create_at}}</h6>
           </ion-col>
           <ion-col size="3" pull="9">
-            <ion-button color="light" (click)="goTodetails(show)" >
+            <ion-button color="light" >
               {{show.id}}
             </ion-button>
           </ion-col>
+
+          <ion-grid>
+            <ion-row>
+              <ion-col size="6">
+                <ion-button color="success" shape="round" class="show" (click)="goTodetails(show)">ดูออเดอร์</ion-button>
+              </ion-col>
+              <ion-col size="6">
+                <ion-button color="danger" shape="round" class="del" (click)="deldata(show.id)">ลบออเดอร์</ion-button>
+              </ion-col>
+            </ion-row>
+          </ion-grid>
+
         </ion-row>
       </ion-grid>
     </ion-card>

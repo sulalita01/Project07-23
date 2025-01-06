@@ -14,9 +14,9 @@
       <ion-label><h2>ออเดอร์ของท่านกำลังจัดเตรียม</h2></ion-label>
     </ion-item>
 
-    <ion-item class="queue"  >
-      <ion-label >
-        <br><h2 class="num">คิว (Queue)</h2><h1 class="numq">{{productshow.id}}</h1>
+    <ion-item class="queue"  *ngFor="let show of productshow" >
+      <ion-label>
+        <br><h2 class="num">คิว (Queue)</h2><h1 class="numq">{{show.id}}</h1>
       </ion-label>
     </ion-item>
     <br><br>

@@ -31,7 +31,7 @@ throw new Error('Method not implemented.');
       },
       {
         id: 3,
-        name:'ช็อกโกแลตคอป ช็อกเม็กช็อก',
+        name:'ช็อกโกแลตคอปเม็ดช็อก',
         price: 30,
         ImageURL:'../../assets/pic/product/ช็อกโกแลตคอป ช็อกเม็กช็อก.jpg'
       },
@@ -121,13 +121,13 @@ throw new Error('Method not implemented.');
       },
       {
         id: 18,
-        name:'สตรอว์เบอร์รี่วิปครีม',
+        name:'สตอเบอร์รี่วิปครีม',
         price: 69,
         ImageURL:'../../assets/pic/product/สตรอว์เบอร์รี่วิปครีม.jpg'
       },
       {
         id: 19,
-        name:'โอริโอ้ผงโอวันตินวิปครีม',
+        name:'โอริโอ้ผงโอวัลตินวิปครีม',
         price: 69,
         ImageURL:'../../assets/pic/product/โอริโอ้ผงโอวันตินวิปครีม.jpg'
       },
